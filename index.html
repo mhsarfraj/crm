@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CRM Pro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head><body>
+<div id="splash"><div class="logo">◆</div><h1>CRM Pro</h1><p id="splashMsg">Initializing workspace…</p><div class="bar"><i></i></div><button id="retry" class="btn" hidden>Retry</button></div>
+<main id="login" hidden><form id="loginForm" class="card login"><div class="logo sm">◆</div><h2>Sign in</h2><p class="muted">Use your CRM account.</p>
+<label>Email<input name="email" type="email" required autocomplete="username"></label>
+<label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+<p class="err" id="loginErr" role="alert"></p><button class="btn primary full">Sign in</button></form></main>
+<div id="app" hidden>
+<aside id="side"><div class="brand"><span class="logo sm">◆</span> CRM <em>PRO</em></div><nav id="nav"></nav>
+<button class="nav-btn" id="themeBtn">◐ Theme</button><button class="nav-btn" id="logoutBtn">↪ Sign out</button></aside>
+<div id="scrim"></div>
+<section id="main"><header><button id="menuBtn" aria-label="Menu">☰</button><input id="gsearch" placeholder="Search current list…" aria-label="Search"><span id="who" class="muted"></span></header>
+<div id="view"></div></section></div>
+<div id="modal" class="modal" hidden><div class="card"><div id="modalBody"></div></div></div>
+<div id="toasts"></div>
+<script src="js/config.js"></script><script src="js/app.js"></script>
+</body></html>
